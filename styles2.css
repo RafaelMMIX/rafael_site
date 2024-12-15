@@ -1,0 +1,19 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-image: 
+        linear-gradient(to right, #383838 1px, transparent 1px),
+        linear-gradient(to bottom, #383838 1px, transparent 1px);
+    background-size: 20px 20px; /* Taille du quadrillage */
+}
+
+/* Responsivité pour une meilleure compatibilité sur différents appareils */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Ajuste la taille minimale pour les petits écrans */
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+    <title>Contact</title>
+    <link rel="icon" href="images/Roblocraft-Light-Dark.png">
+    <style>
+        /* Ajoutez ce style pour centrer l'iframe */
+        .iframe-container {
+            display: flex;
+            justify-content: center; /* Centre horizontalement */
+            align-items: center; /* Centre verticalement */
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+        }
+
+        /* Style pour le carré avec bords arrondis */
+        .iframe-box {
+            width: 75vw; /* 75% de la largeur de la fenêtre */
+            height: 75vh; /* 75% de la hauteur de la fenêtre */
+            border-radius: 20px; /* Bords arrondis */
+            overflow: hidden; /* Cache le débordement */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+        }
+
+        iframe {
+            width: 100%; /* Prend toute la largeur de la div */
+            height: 100%; /* Prend toute la hauteur de la div */
+            border: none; /* Supprime la bordure par défaut de l'iframe */
+            display: block; /* Évite les espaces en bas de l'iframe */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="images/rafael_dark_nobg.png" alt="Logo" /> <!-- Remplacez "logo.png" par le chemin de votre logo -->
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="iframe-container">
+        <div class="iframe-box">
+            <iframe data-tally-src="https://tally.so/embed/3lVY5B?alignLeft=1&dynamicHeight=1" loading="lazy" title="Contacte moi"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+    </script>
+</body>
+</html>
