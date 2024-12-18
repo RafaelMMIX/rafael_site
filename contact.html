@@ -6,31 +6,6 @@
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
     <title>Contact</title>
     <link rel="icon" href="images/Roblocraft-Light-Dark.png">
-    <style>
-        /* Ajoutez ce style pour centrer l'iframe */
-        .iframe-container {
-            display: flex;
-            justify-content: center; /* Centre horizontalement */
-            align-items: center; /* Centre verticalement */
-            height: 100vh; /* Prend toute la hauteur de la fenêtre */
-        }
-
-        /* Style pour le carré avec bords arrondis */
-        .iframe-box {
-            width: 75vw; /* 75% de la largeur de la fenêtre */
-            height: 75vh; /* 75% de la hauteur de la fenêtre */
-            border-radius: 20px; /* Bords arrondis */
-            overflow: hidden; /* Cache le débordement */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
-        }
-
-        iframe {
-            width: 100%; /* Prend toute la largeur de la div */
-            height: 100%; /* Prend toute la hauteur de la div */
-            border: none; /* Supprime la bordure par défaut de l'iframe */
-            display: block; /* Évite les espaces en bas de l'iframe */
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -41,34 +16,8 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    
-    <form action="process_form.php" method="post" class="form">
-        <div class="flex">
-            <label>
-                <input class="input" type="text" placeholder="" id="name" required="">
-                <span>Prénom</span>
-            </label>
-    
-            <label>
-                <input class="input" type="text" placeholder="" id="name2" required="">
-                <span>Nom</span>
-            </label>
-        </div>    
-        <label>
-            <input class="input" type="email" placeholder="" id="email" required="">
-            <span>Email</span>
-        </label>
-        <label>
-            <textarea class="input01" placeholder="" rows="3"  id="message" required=""></textarea>
-            <span>Votre message</span>
-        </label>
-        
-        <button href="#" class="fancy" type="submit">
-          <span class="top-key"></span>
-          <span class="text">Envoyer</span>
-          <span class="bottom-key-1"></span>
-          <span class="bottom-key-2"></span>
-        </button>
-    </form>
+ <div class="projects-container">
+    <a class="contact_mail" href="mailto:rafael.mmix.contact">POUR ME CONTACTER SI T'AS ENVIE <3</a>
+ </div>
 </body>
 </html>
