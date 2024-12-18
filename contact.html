@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
     <title>Contact</title>
-    <link rel="icon" href="Roblocraft-Light-Dark.png">
+    <link rel="icon" href="images/Roblocraft-Light-Dark.png">
     <style>
         /* Ajoutez ce style pour centrer l'iframe */
         .iframe-container {
@@ -34,7 +34,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="rafael_dark_nobg.png" alt="Logo" /> <!-- Remplacez "logo.png" par le chemin de votre logo -->
+        <a href="index.html"><img src="images\rafael_dark_nobg.png" alt="Logo" /></a>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="projets.html">Projets</a>
@@ -42,14 +42,33 @@
         </nav>
     </header>
     
-    <div class="iframe-container">
-        <div class="iframe-box">
-            <iframe data-tally-src="https://tally.so/embed/3lVY5B?alignLeft=1&dynamicHeight=1" loading="lazy" title="Contacte moi"></iframe>
-        </div>
-    </div>
+    <form action="process_form.php" method="post" class="form">
+        <div class="flex">
+            <label>
+                <input class="input" type="text" placeholder="" id="name" required="">
+                <span>Prénom</span>
+            </label>
     
-    <script>
-        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
-    </script>
+            <label>
+                <input class="input" type="text" placeholder="" id="name2" required="">
+                <span>Nom</span>
+            </label>
+        </div>    
+        <label>
+            <input class="input" type="email" placeholder="" id="email" required="">
+            <span>Email</span>
+        </label>
+        <label>
+            <textarea class="input01" placeholder="" rows="3"  id="message" required=""></textarea>
+            <span>Votre message</span>
+        </label>
+        
+        <button href="#" class="fancy" type="submit">
+          <span class="top-key"></span>
+          <span class="text">Envoyer</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+    </form>
 </body>
 </html>
