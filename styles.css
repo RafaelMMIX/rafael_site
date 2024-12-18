@@ -790,3 +790,10 @@ body {
   right: 0;
   width: 0;
 }
+
+.contact_mail {
+  text-decoration: none;
+  color: #333;
+  font-size: 60px;
+  text-align: center;
+}
